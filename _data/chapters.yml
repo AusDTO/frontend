@@ -28,7 +28,6 @@
 
     - id: html
       title: HTML
-      enabled: false
 
     - id: css
       title: CSS
