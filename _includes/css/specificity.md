@@ -1,4 +1,4 @@
-- IDs should be reserved for JavaScript. Don’t use IDs for styles.
+- IDs should be reserved for JavaScript. Don't use IDs for styles.
 
   ```scss
   // Bad
@@ -49,7 +49,7 @@ specificity and curve to higher specificity as you move towards the bottom of
 the output file. Since CSS rules get replaced by rules further down in the
 file, you'll override rules in an expected way.
 
-There’s a tool that can graph your files’ specificity, [CSS specificity
+There's a tool that can graph your files' specificity, [CSS specificity
 graph](http://jonassebastianohlsson.com/specificity-graph/). Run your final
 output file through this tool and strive for a curve trending upwards.
 

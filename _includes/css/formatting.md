@@ -1,9 +1,9 @@
 ## Spacing
-- Where possible, limit CSS files’ width to 80 characters. See
+- Where possible, limit CSS files' width to 80 characters. See
   [notes](#format_notes) to see how to configure your text editor to 80
   characters.
   - There will be unavoidable exceptions to this rule, such as URLs, or
-    gradient syntax. Don’t worry.
+    gradient syntax. Don't worry.
 - Use soft-tabs with a two space indent.
 - Put one space after `:` in property declarations.
 - Put spaces before `{` in rule declarations.

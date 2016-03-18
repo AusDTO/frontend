@@ -19,7 +19,7 @@ to keep the specificity trend in an upwards curve as you move down in the file
 - Create more specific structure with modules. For instance, if the logo image
   and text needs very specific treatment, use a module.
   - Build modules from components through mixins, extends, and HTML.
-  - Modules can have higher specificity, it’s fine to use deeper nesting.
+  - Modules can have higher specificity, it's fine to use deeper nesting.
 - Have an overrides file or folder comprised of global rules that are meant to
   override components and modules.
   - These can be generic utilities.

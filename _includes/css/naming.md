@@ -50,7 +50,7 @@
   .item_list
   ```
 
-- Don't abbreviate unless it’s a well-known abbreviation.
+- Don't abbreviate unless it's a well-known abbreviation.
 
   ```scss
   // Bad
@@ -94,7 +94,7 @@
 
 When it comes to naming, the most important thing is consistency. The
 recommended way to do this is using an existing methodology like [BEM](#BEM),
-or use a custom one that’s clearly defined.
+or use a custom one that's clearly defined.
 
 ### BEM
 
@@ -112,7 +112,7 @@ From [Harry Roberts][mindbemding]:
 subsection. However, you might want to use standard BEM when:
 
 * You need a naming scheme that general CSS developers will already be familiar
-  with or an existing naming scheme hasn’t been consistent enough.
+  with or an existing naming scheme hasn't been consistent enough.
 * When you want to use JavaScript to modify the BEM class names dynamically.
 
 Here is an example of BEM in SCSS:
