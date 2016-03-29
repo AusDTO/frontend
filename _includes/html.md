@@ -56,7 +56,7 @@ trailing slash, as in `<br/>`. For example, mark them up like so:
   <wbr>
 ```
 
-:warning: **Note:** [SVG](#inline-svg) elements are essentially XML, and
+**Note:** [SVG](#inline-svg) elements are essentially XML, and
 therefore follow different rules **TODO: citation needed**.
 
 ## Nesting
@@ -69,7 +69,7 @@ therefore follow different rules **TODO: citation needed**.
   </ul>
 ```
 
-> :warning: If you learned HTML in the 90s, you may remember not having to
+> If you learned HTML in the 90s, you may remember not having to
 > close some elements, such as `<li>`:
 >
 > ```html
