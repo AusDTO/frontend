@@ -26,20 +26,19 @@ by an element such as `<html>`, and not a comment. See
 [the spec](https://www.w3.org/TR/html51/syntax.html#optional-tags)
 for more information.
 
-
 ## Void Elements
 **Do not** close [void][void elements] ("self-closing") elements with a
 trailing slash, as in `<br/>`. For example, mark them up like so:
 
-  ```html
+```html
   <link rel="stylesheet" href="foo.css">
   <img src="foo.gif">
   <embed src="foo.svg">
-  ```
-  
+```
+
   HTML5's full list of void elements is:
 
-  ```html
+```html
   <area>
   <base>
   <br>
@@ -55,7 +54,7 @@ trailing slash, as in `<br/>`. For example, mark them up like so:
   <source>
   <track>
   <wbr>
-  ```
+```
 
 :warning: **Note:** [SVG](#inline-svg) elements are essentially XML, and
 therefore follow different rules **TODO: citation needed**.
@@ -63,29 +62,29 @@ therefore follow different rules **TODO: citation needed**.
 ## Nesting
 1. Always close elements that aren't [void or "self-closing"](#void-elements):
 
-  ```html
+```html
   <ul>
     <li>Item 1</li>
     <li>Item 2 <a href="#foo">link</a></li>
   </ul>
-  ```
+```
 
-  > :warning: If you learned HTML in the 90s, you may remember not having to
-  > close some elements, such as `<li>`:
-  > 
-  > ```html
-  > <ul>
-  >   <li>Item 1
-  >   <li>Item 2
-  > </ul>
-  > ```
-  > 
-  > This _is_ [valid in HTML4](https://www.w3.org/TR/html-markup/li.html)
-  > (note: this linked spec has been deprecated), but is no longer valid in HTML5.
+> :warning: If you learned HTML in the 90s, you may remember not having to
+> close some elements, such as `<li>`:
+>
+> ```html
+> <ul>
+>   <li>Item 1
+>   <li>Item 2
+> </ul>
+> ```
+>
+> This _is_ [valid in HTML4](https://www.w3.org/TR/html-markup/li.html)
+> (note: this linked spec has been deprecated), but is no longer valid in HTML5.
 
 1. Be sure to nest start and close tags properly:
 
-  ```html
+```html
   <section>
     <h1>Section Title</h1>
     <ul>
@@ -99,7 +98,7 @@ therefore follow different rules **TODO: citation needed**.
       </li>
     </ul>
   </section>
-  ```
+```
 
 Improper nesting order may cause unexpected display issues. Using consistent
 [whitespace](#whitespace) and an editor that understands HTML can help you
@@ -122,7 +121,7 @@ and [`setAttributeNS()`][setAttributeNS].
 1. Because SVG is an XML dialect, some elements without content (such as `<rect>`
 and `<path>`) *may* self-close. In this case, you must include the trailing slash:
 
-  ```html
+```html
   <svg>
 
     <!-- if the closing tag were omitted, the following elements wouldn't render -->
@@ -132,7 +131,7 @@ and `<path>`) *may* self-close. In this case, you must include the trailing slas
     <rect width="20" height="30"/>
 
   </svg>
-  ```
+```
 
 ### Links in Inline SVG
 You can wrap any SVG element in an `<a>` element to turn it into an active link,
@@ -156,7 +155,7 @@ var svg = document.querySelector('svg');
 var a = document.createElementNS('a', 'http://www.w3.org/2000/svg');
 a.setAttributeNS('href', 'http://www.w3.org/1999/xlink');
 svg.appendChild(a);
-``` 
+```
 
 ## Whitespace
 For consistency and ease of editing HTML, we suggest using **2-space indentation**.
@@ -180,23 +179,22 @@ Where the `CSS selector` is an class, ID, or attribute selector, as in:
 ```html
 <div class="foo">
 
-  ...
+  <!-- ... -->
 
 </div><!-- .foo -->
 
 <section id="bar">
 
-  ...
+  <!-- ... -->
 
 </section><!-- #bar -->
 
 <textarea name="content">
 
-  ...
+  <!-- ... -->
 
 </textarea><!-- [name=content] -->
 ```
-
 
 [DTD]: https://en.wikipedia.org/wiki/Document_type_definition
 [HTML5 doctype]: http://dev.w3.org/html5/html-author/#doctype-declaration
